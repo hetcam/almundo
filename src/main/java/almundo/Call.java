@@ -9,7 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Clase encargada de instancias las llamadas
+ * Clase encargada de instanciar o crear las llamadas
  * 
  * @author camilo
  *
