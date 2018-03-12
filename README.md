@@ -17,7 +17,7 @@ Se implement&oacute; un ciclo repetitivo o recursivo en caso de que no ning&uacu
 
 ## Digrama del flujo de procesos:
 
-![alt text](https://github.com/hetcam/almundo/blob/master/documentacion/diagrama-flujo-proceso.png)
+![alt text](https://github.com/hetcam/almundo/blob/master/documentacion/diagrama-flujo-procesos.png)
 
 ## Diagrama de Clases:
 
