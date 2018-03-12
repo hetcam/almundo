@@ -14,3 +14,8 @@ Se implement&oacute; un ciclo repetitivo o recursivo en caso de que no ning&uacu
 
 - ### Sprint Boot 
 - ### Maven
+
+
+## Diagrama de Clases:
+
+- https://drive.google.com/file/d/1vfKkAEa6okasWebhB8aW2CGSwefgeoof/view
