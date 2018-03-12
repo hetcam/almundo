@@ -18,4 +18,4 @@ Se implement&oacute; un ciclo repetitivo o recursivo en caso de que no ning&uacu
 
 ## Diagrama de Clases:
 
-- https://drive.google.com/file/d/1vfKkAEa6okasWebhB8aW2CGSwefgeoof/view
+![alt text](https://github.com/hetcam/almundo/blob/master/documentacion/diagrama-clases.png)
