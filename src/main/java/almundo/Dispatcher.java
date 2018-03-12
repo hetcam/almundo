@@ -3,7 +3,13 @@
  */
 package almundo;
 
+import almundo.modelo.Empleado;
+import almundo.modelo.TipoEmpleado;
+
 /**
+ * Clase manejadora de las llamadas, asigna a cada empleado una llamada si esta
+ * libre
+ * 
  * @author camilo
  *
  */
@@ -20,8 +26,8 @@ public class Dispatcher {
 		if (!operadorOcupado) {
 			operadorOcupado = true;
 			synchronized (Dispatcher.class) {
+				Empleado.atenderLlamada(TipoEmpleado.OPERADOR, call.getCode());
 				// call.duracionLlamada();
-				System.out.println("Operador atendiendo llamada numero " + call.getCode());
 
 				operadorOcupado = false;
 			}
@@ -30,7 +36,7 @@ public class Dispatcher {
 			supervisorOcupado = true;
 			synchronized (Dispatcher.class) {
 				// call.duracionLlamada();
-				System.out.println("Supervisor atendiendo llamada numero " + call.getCode());
+				Empleado.atenderLlamada(TipoEmpleado.SUPERVISOR, call.getCode());
 
 				supervisorOcupado = false;
 			}
@@ -39,10 +45,17 @@ public class Dispatcher {
 			directorOcupado = true;
 			synchronized (Dispatcher.class) {
 				// call.duracionLlamada();
-				System.out.println("Director atendiendo llamada numero " + call.getCode());
+				Empleado.atenderLlamada(TipoEmpleado.DIRECTOR, call.getCode());
 				directorOcupado = false;
 			}
 		} else {
+
+			/**
+			 * 
+			 * Ingresa aqui si no hay ningun empleado libre !!!
+			 * 
+			 */
+
 			synchronized (Dispatcher.class) {
 				dispatchCall(call);
 			}
