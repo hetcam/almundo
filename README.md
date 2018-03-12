@@ -15,7 +15,12 @@ Se implement&oacute; un ciclo repetitivo o recursivo en caso de que no ning&uacu
 - ### Sprint Boot 
 - ### Maven
 
+## Digrama del flujo de procesos:
+
+![alt text](https://github.com/hetcam/almundo/blob/master/documentacion/diagrama-flujo-proceso.png)
 
 ## Diagrama de Clases:
 
 ![alt text](https://github.com/hetcam/almundo/blob/master/documentacion/diagrama-clases.png)
+
+
