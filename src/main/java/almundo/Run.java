@@ -26,11 +26,13 @@ public class Run implements ApplicationRunner {
 	private static Logger log = LoggerFactory.getLogger(Run.class);
 	
 	private static final int NTHREADS = 10;
-		
+	/**
+	 * Ejecuta la creacion de las llamadas, inicia con 10 llamadas	
+	 */
 	public void run(ApplicationArguments args) throws Exception {
 		ExecutorService executor = Executors.newFixedThreadPool(NTHREADS);
 		
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < NTHREADS; i++) {
 			Runnable worker = new Call("" + i);
 			executor.execute(worker);
 		}
